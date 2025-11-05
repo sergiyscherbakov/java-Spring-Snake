@@ -1,5 +1,19 @@
 # 🐍 Гра Змійка на Spring Boot
 
+![Java](https://img.shields.io/badge/Java-17-orange?style=flat&logo=java) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-brightgreen?style=flat&logo=springboot) ![Maven](https://img.shields.io/badge/Maven-3.6+-blue?style=flat&logo=apachemaven) ![WebSocket](https://img.shields.io/badge/WebSocket-STOMP-red?style=flat) ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
+
+## Автор
+
+**Розробник:** Сергій Щербаков
+**Email:** sergiyscherbakov@ukr.net
+**Telegram:** @s_help_2010
+
+### 💰 Підтримати розробку
+Задонатити на каву USDT (BINANCE SMART CHAIN):
+**`0xDFD0A23d2FEd7c1ab8A0F9A4a1F8386832B6f95A`**
+
+---
+
 Класична гра "Змійка" реалізована за допомогою Java Spring Boot з використанням WebSocket для оновлень в реальному часі.
 
 ## 📋 Опис
@@ -98,10 +112,6 @@ java-Spring-Snake/
 - ✅ Підрахунок очок
 - ✅ Модальне вікно завершення гри
 - ✅ Можливість перезапуску гри
-
-## 👨‍💻 Автор
-
-**Сергій Щербаков**
 
 ## 📄 Ліцензія
 
