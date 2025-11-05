@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра Змійка - Spring Boot</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Гра Змійка</h1>
+
+        <div class="game-info">
+            <div class="score-board">
+                <span>Рахунок:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="controls-info">
+                <span>Керування: ⬆️ ⬇️ ⬅️ ➡️</span>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+        <div class="game-controls">
+            <button id="startBtn" class="btn btn-primary">Почати гру</button>
+            <button id="restartBtn" class="btn btn-secondary" style="display: none;">Грати знову</button>
+        </div>
+
+        <div id="gameOverModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Гра закінчена!</h2>
+                <p>Ваш рахунок: <span id="finalScore">0</span></p>
+                <button id="playAgainBtn" class="btn btn-primary">Грати знову</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script th:src="@{/js/game.js}"></script>
+</body>
+</html>
